@@ -2,11 +2,11 @@ const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
 
 const internshipData = [{
-    role: 'Java Full-Stack Intern',
-    company: 'Add Your Company Name',
-    duration: 'Add dates (e.g., Jun 2025 - Aug 2025)',
-    summary: 'Worked on REST APIs, frontend integration, bug fixes, and deployment support.',
-    highlights: ['Built feature modules end-to-end', 'Collaborated through Git workflows', 'Improved API response handling'],
+    role: 'Ai Product Development',
+    company: 'Samatrix',
+    duration: '4 weeks (e.g., Jun 2025 - Aug 2025)',
+    summary: 'Worked on Real-world application of statistical concepts.',
+    highlights: ['machine learning', 'statistical tools', 'clean, analyze, and interpret data'],
 }, ];
 
 const certificateData = [{
