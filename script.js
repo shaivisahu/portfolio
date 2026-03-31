@@ -1,98 +1,109 @@
 const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
 
-const internshipData = [{
-    role: 'Ai Product Development',
-    company: 'Samatrix',
-    duration: '4 weeks (e.g., Jun 2025 - Aug 2025)',
-    summary: 'Worked on Real-world application of statistical concepts.',
-    highlights: ['machine learning', 'statistical tools', 'clean, analyze, and interpret data'],
-}, ];
-
-const certificateData = [{
-        title: 'Java Full-Stack Development',
-        issuer: 'Add Issuer Name',
-        year: '2025',
-        link: 'https://example.com/certificate-link',
-    },
-    {
-        title: 'Data Structures and Algorithms in Java',
-        issuer: 'Add Issuer Name',
-        year: '2025',
-        link: 'https://example.com/certificate-link',
-    },
-    {
-        title: 'Spring Boot / Backend Certification',
-        issuer: 'Add Issuer Name',
-        year: '2025',
-        link: 'https://example.com/certificate-link',
-    },
+const internshipData = [
+  {
+    role: 'AI Product Development Internship',
+    company: 'Samatrix Consulting Private Limited',
+    duration: 'Issued Jun 2025 • Expires Jul 2025',
+    summary:
+      'Worked on real-world product development tasks involving statistical analysis and machine learning workflows.',
+    highlights: [
+      'Applied machine learning concepts in practical scenarios',
+      'Used statistical tools to analyze and interpret data',
+      'Contributed to data cleaning and insight generation',
+    ],
+  },
 ];
 
-const projectData = [{
-        name: 'fitness-microservices',
-        area: 'Backend architecture',
-        stack: 'Java • Microservices • Backend',
-        description: 'Java microservices architecture for a fitness domain with modular, scalable backend design.',
-        primaryLink: 'https://github.com/shaivisahu/fitness-microservices',
-        primaryLabel: 'Repository ↗',
-    },
-    {
-        name: 'Personal Portfolio Website',
-        area: 'Web presence',
-        stack: 'HTML • CSS • UI Design',
-        description: 'Live personal portfolio website showcasing skills, profile, and project highlights.',
-        primaryLink: 'https://shaivisahu.github.io/personal-portfolio.github.io/',
-        primaryLabel: 'Live Demo ↗',
-    },
-    {
-        name: 'Face-Recognition-System',
-        area: 'AI/ML + CV',
-        stack: 'Python • OpenCV • ML',
-        description: 'Computer vision project for facial recognition using Python-based ML/CV tooling.',
-        primaryLink: 'https://github.com/shaivisahu/Face-Recognition-System',
-        primaryLabel: 'Repository ↗',
-    },
-    {
-        name: 'supply_chain_risk_app',
-        area: 'Applied analytics',
-        stack: 'Python • Analytics • App Design',
-        description: 'Risk analysis concept app focused on supply chain insights and data-driven monitoring.',
-        primaryLink: 'https://github.com/shaivisahu/supply_chain_risk_app',
-        primaryLabel: 'Repository ↗',
-    },
-    {
-        name: 'Stock-Price-Prediction-Model-',
-        area: 'ML forecasting',
-        stack: 'Python • scikit-learn • Pandas',
-        description: 'ML model for stock-price forecasting with preprocessing, training, and visualized predictions.',
-        primaryLink: 'https://github.com/shaivisahu/Stock-Price-Prediction-Model-',
-        primaryLabel: 'Repository ↗',
-    },
-    {
-        name: 'ATM-simulation-System',
-        area: 'OOP simulation',
-        stack: 'Java • OOP • Simulation',
-        description: 'Core banking simulation project modeling ATM operations and transaction flow.',
-        primaryLink: 'https://shaivisahu.github.io/ATM-simulation-System/',
-        primaryLabel: 'Live Demo ↗',
-    },
-    {
-        name: 'Racing-Game',
-        area: 'Frontend/game logic',
-        stack: 'JavaScript • Game Dev • Frontend',
-        description: 'Browser-based racing game demonstrating JavaScript logic, DOM events, and gameplay loops.',
-        primaryLink: 'https://shaivisahu.github.io/Racing-Game/',
-        primaryLabel: 'Live Demo ↗',
-    },
-    {
-        name: 'DSA-Bootcamp-Java',
-        area: 'DSA practice',
-        stack: 'Java • DSA • Problem Solving',
-        description: 'Consistent DSA practice repository with Java coding exercises and interview prep content.',
-        primaryLink: 'https://github.com/shaivisahu/DSA-Bootcamp-Java',
-        primaryLabel: 'Repository ↗',
-    },
+const certificateData = [
+  {
+    title: 'Microsoft Azure Fundamentals – Describe Cloud Concepts',
+    issuer: 'Microsoft / Azure',
+    year: '2025',
+    link: 'ADD_CERT_LINK_HERE',
+  },
+  {
+    title: 'Introduction to Cloud Infrastructure – Azure Architecture & Services',
+    issuer: 'Azure',
+    year: '2025',
+    link: 'ADD_CERT_LINK_HERE',
+  },
+  {
+    title: 'J.P. Morgan Software Engineering Virtual Experience',
+    issuer: 'J.P. Morgan',
+    year: '2025',
+    link: 'ADD_CERT_LINK_HERE',
+  },
+  {
+    title: 'Accenture Software Engineering Job Simulation',
+    issuer: 'Accenture',
+    year: '2025',
+    link: 'ADD_CERT_LINK_HERE',
+  },
+  {
+    title: 'ISRO Hackathon Participation',
+    issuer: 'ISRO',
+    year: '2025',
+    link: 'ADD_CERT_LINK_HERE',
+  },
+];
+
+const projectData = [
+  {
+    name: 'Stock Price Prediction Model',
+    area: 'ML forecasting',
+    stack: 'Python • Machine Learning • LSTM',
+    description:
+      'Built a stock price prediction system using LSTM neural networks to forecast market trends.',
+    primaryLink: 'https://github.com/shaivisahu/Stock-Price-Prediction-Model-',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'Authentication Server',
+    area: 'Backend security',
+    stack: 'Java • Spring Boot • Spring Security • JWT • MySQL • REST APIs',
+    description:
+      'Developed a backend authentication server with JWT-based authentication and scalable REST APIs.',
+    primaryLink: 'ADD_GITHUB_LINK_HERE',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'Fitness Tracker (Microservices Architecture)',
+    area: 'Backend architecture',
+    stack: 'Java • Spring Boot • Microservices • MongoDB • PostgreSQL • Maven',
+    description:
+      'Built a scalable fitness tracking platform with AI-powered suggestions using microservices architecture.',
+    primaryLink: 'https://github.com/shaivisahu/fitness-microservices',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'Jarvis',
+    area: 'AI assistant',
+    stack: 'Python • NLP • Speech Recognition • pyttsx3 • REST APIs',
+    description:
+      'Developed a Python virtual assistant that automates daily tasks through voice commands.',
+    primaryLink: 'ADD_GITHUB_LINK_HERE',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'ChatApp',
+    area: 'Full-stack realtime app',
+    stack: 'React • Spring Boot • JWT • MySQL • REST APIs • WebSockets',
+    description:
+      'Built a real-time chat app with secure authentication and seamless messaging.',
+    primaryLink: 'ADD_GITHUB_LINK_HERE',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'ATM Simulation System',
+    area: 'OOP simulation',
+    stack: 'Java • MySQL • JDBC',
+    description:
+      'Built a Java ATM simulator replicating banking operations including authentication, transactions, and balance management.',
+    primaryLink: 'https://github.com/shaivisahu/ATM-simulation-System',
+    primaryLabel: 'Repository ↗',
+  },
 ];
 
 const grid = document.getElementById('project-grid');
