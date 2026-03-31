@@ -50,6 +50,7 @@ const certificateData = [
 ];
 
 const projectData = [
+  // ===== Resume projects =====
   {
     name: 'Stock Price Prediction Model',
     area: 'ML forecasting',
@@ -104,8 +105,54 @@ const projectData = [
     primaryLink: 'https://github.com/shaivisahu/ATM-simulation-System',
     primaryLabel: 'Repository ↗',
   },
-];
 
+  // ===== Existing portfolio projects you already had =====
+  {
+    name: 'Personal Portfolio Website',
+    area: 'Web presence',
+    stack: 'HTML • CSS • UI Design',
+    description:
+      'Live personal portfolio website showcasing skills, profile, and project highlights.',
+    primaryLink: 'https://shaivisahu.github.io/personal-portfolio.github.io/',
+    primaryLabel: 'Live Demo ↗',
+  },
+  {
+    name: 'Face-Recognition-System',
+    area: 'AI/ML + CV',
+    stack: 'Python • OpenCV • ML',
+    description:
+      'Computer vision project for facial recognition using Python-based ML/CV tooling.',
+    primaryLink: 'https://github.com/shaivisahu/Face-Recognition-System',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'supply_chain_risk_app',
+    area: 'Applied analytics',
+    stack: 'Python • Analytics • App Design',
+    description:
+      'Risk analysis concept app focused on supply chain insights and data-driven monitoring.',
+    primaryLink: 'https://github.com/shaivisahu/supply_chain_risk_app',
+    primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'Racing-Game',
+    area: 'Frontend/game logic',
+    stack: 'JavaScript • Game Dev • Frontend',
+    description:
+      'Browser-based racing game demonstrating JavaScript logic, DOM events, and gameplay loops.',
+    primaryLink: 'https://shaivisahu.github.io/Racing-Game/',
+    primaryLabel: 'Live Demo ↗',
+  },
+  {
+    name: 'DSA-Bootcamp-Java',
+    area: 'DSA practice',
+    stack: 'Java • DSA • Problem Solving',
+    description:
+      'Consistent DSA practice repository with Java coding exercises and interview prep content.',
+    primaryLink: 'https://github.com/shaivisahu/DSA-Bootcamp-Java',
+    primaryLabel: 'Repository ↗',
+  },
+];
 const grid = document.getElementById('project-grid');
 const search = document.getElementById('project-search');
 const projectCount = document.getElementById('project-count');
