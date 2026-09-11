@@ -77,6 +77,32 @@
                 <span>Data Structures & Algorithms</span><span>DBMS</span><span>Machine Learning</span><span>OpenCV</span>
             </div>
         </section>
+
+        <section class="glass-card portfolio-chatbot" id="chatbot">
+            <div class="chatbot-heading">
+                <div>
+                    <p class="eyebrow">PORTFOLIO AI</p>
+                    <h2>Ask About My Portfolio</h2>
+                    <p>Ask me about projects, skills, internship experience, certifications, or technologies.</p>
+                </div>
+                <span class="chat-status"><i></i> Online</span>
+            </div>
+
+            <div class="chat-suggestions" aria-label="Suggested questions">
+                <button type="button" data-question="Tell me about Shaivi's projects">Projects</button>
+                <button type="button" data-question="What was Shaivi's internship?">Internship</button>
+                <button type="button" data-question="What certifications does Shaivi have?">Certifications</button>
+                <button type="button" data-question="What are Shaivi's main skills?">Skills</button>
+            </div>
+
+            <div class="chat-window" id="chat-window" aria-live="polite"></div>
+
+            <form class="chat-input-row" id="chat-form">
+                <input id="chat-input" type="text" autocomplete="off" placeholder="Ask a question about the portfolio..." aria-label="Ask about the portfolio" />
+                <button type="submit" aria-label="Send question">➤</button>
+            </form>
+            <p class="chatbot-note">This assistant answers from the portfolio/resume information built into this site.</p>
+        </section>
     </main>
 
     <footer class="container">
