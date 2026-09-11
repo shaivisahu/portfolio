@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shaivi Sahu | Software Engineer Portfolio</title>
     <meta name="description" content="Shaivi Sahu's portfolio — Java, Spring Boot, full-stack development, AI/ML, DSA, and cloud-native projects." />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        .portfolio-chatbot{margin-top:28px;overflow:hidden}
+        .chatbot-heading{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+        .chatbot-heading h2{margin:4px 0 8px}
+        .chatbot-heading p:not(.eyebrow){margin:0;color:var(--muted)}
+        .chat-status{font-size:.8rem;border:1px solid rgba(56,189,248,.25);padding:7px 10px;border-radius:999px;white-space:nowrap}
+        .chat-status i{display:inline-block;width:7px;height:7px;background:#4ade80;border-radius:50%;margin-right:6px}
+        .chat-suggestions{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 12px}
+        .chat-suggestions button{border:1px solid rgba(56,189,248,.25);background:rgba(15,23,42,.7);color:var(--text);border-radius:999px;padding:7px 12px;cursor:pointer}
+        .chat-suggestions button:hover{border-color:var(--accent);transform:translateY(-1px)}
+        .chat-window{height:270px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid rgba(148,163,184,.15);border-radius:16px;background:rgba(2,6,23,.38)}
+        .chat-message{max-width:82%;padding:10px 13px;border-radius:14px;line-height:1.5;font-size:.92rem}
+        .chat-message.bot{align-self:flex-start;background:rgba(30,41,59,.85);border:1px solid rgba(148,163,184,.12)}
+        .chat-message.user{align-self:flex-end;background:rgba(37,99,235,.3);border:1px solid rgba(96,165,250,.25)}
+        .chat-input-row{display:flex;gap:10px;margin-top:12px}
+        .chat-input-row input{flex:1;min-width:0;background:rgba(15,23,42,.8);color:var(--text);border:1px solid rgba(148,163,184,.2);border-radius:12px;padding:12px 14px;outline:none}
+        .chat-input-row input:focus{border-color:var(--accent)}
+        .chat-input-row button{width:48px;border:0;border-radius:12px;background:var(--accent);color:#06111f;font-size:1.1rem;font-weight:700;cursor:pointer}
+        .chatbot-note{font-size:.75rem!important;color:var(--muted);margin:9px 0 0!important}
+        @media(max-width:600px){.chatbot-heading{flex-direction:column}.chat-window{height:300px}.chat-message{max-width:92%}}
+    </style>
 </head>
-
 <body>
     <canvas id="particle-canvas"></canvas>
-
     <header class="hero container">
         <p class="eyebrow">JAVA • SPRING BOOT • REACT • PYTHON • AI/ML • CLOUD</p>
         <h1>Hi, I'm Shaivi Sahu 👋</h1>
-        <p class="subtitle">
-            Software engineering learner focused on building reliable backend systems, full-stack applications, and practical AI/ML projects — with strong foundations in Java, DSA, APIs, databases, and cloud technologies.
-        </p>
+        <p class="subtitle">Software engineering learner focused on building reliable backend systems, full-stack applications, and practical AI/ML projects — with strong foundations in Java, DSA, APIs, databases, and cloud technologies.</p>
         <div class="hero-cta">
             <a class="btn btn-primary" href="#projects">Explore Projects</a>
             <a class="btn btn-secondary" href="https://github.com/shaivisahu" target="_blank" rel="noreferrer">GitHub</a>
@@ -25,91 +41,21 @@
             <a class="btn btn-secondary" href="mailto:sahushaivi00@gmail.com">Email</a>
         </div>
     </header>
-
     <main class="container">
-        <section class="glass-card">
-            <h2>Professional Snapshot</h2>
-            <ul class="timeline">
-                <li>Building backend and full-stack applications with Java, Spring Boot, REST APIs, SQL, and modern web technologies.</li>
-                <li>Hands-on experience across microservices, authentication, real-time applications, AI/ML, computer vision, and analytics.</li>
-                <li>Completed an AI Product Development internship and multiple software-engineering/cloud virtual experiences.</li>
-                <li>Actively strengthening DSA, DBMS, OOP, system design, and interview-focused problem solving in Java.</li>
-                <li>Exploring production-oriented engineering practices including Docker, Kubernetes, AWS, and scalable API design.</li>
-            </ul>
-        </section>
-
-        <section class="grid-section" id="projects">
-            <div class="section-head">
-                <h2>Detailed Project Portfolio</h2>
-                <p>Selected projects spanning backend engineering, full-stack development, AI/ML, analytics, and DSA.</p>
-            </div>
-
-            <div class="toolbar glass-card">
-                <input id="project-search" type="search" placeholder="Search by project name, stack, or area..." aria-label="Search projects" />
-                <div class="stats">
-                    <span id="project-count">0 projects</span>
-                    <span id="language-count">0 keywords</span>
-                </div>
-            </div>
-
-            <p id="search-state" class="search-state" aria-live="polite"></p>
-            <div class="project-grid" id="project-grid"></div>
-        </section>
-
-        <section class="glass-card" id="internships">
-            <h2>Internship Experience</h2>
-            <div class="timeline-list" id="internship-list"></div>
-        </section>
-
-        <section class="glass-card" id="certificates">
-            <h2>Certificates & Achievements</h2>
-            <div class="cert-grid" id="certificate-list"></div>
-        </section>
-
-        <section class="glass-card" id="skills">
-            <h2>Skill Matrix</h2>
-            <div class="chips">
-                <span>Java</span><span>Python</span><span>JavaScript</span>
-                <span>Spring Boot</span><span>Spring Security</span><span>React</span><span>HTML</span><span>CSS</span>
-                <span>REST APIs</span><span>WebSockets</span><span>Microservices</span><span>Kafka</span><span>LLD</span>
-                <span>Git</span><span>GitHub</span><span>Docker</span><span>Kubernetes</span><span>AWS</span>
-                <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>JDBC</span>
-                <span>Data Structures & Algorithms</span><span>DBMS</span><span>Machine Learning</span><span>OpenCV</span>
-            </div>
-        </section>
-
+        <section class="glass-card"><h2>Professional Snapshot</h2><ul class="timeline"><li>Building backend and full-stack applications with Java, Spring Boot, REST APIs, SQL, and modern web technologies.</li><li>Hands-on experience across microservices, authentication, real-time applications, AI/ML, computer vision, and analytics.</li><li>Completed an AI Product Development internship and multiple software-engineering/cloud virtual experiences.</li><li>Actively strengthening DSA, DBMS, OOP, system design, and interview-focused problem solving in Java.</li><li>Exploring production-oriented engineering practices including Docker, Kubernetes, AWS, and scalable API design.</li></ul></section>
+        <section class="grid-section" id="projects"><div class="section-head"><h2>Detailed Project Portfolio</h2><p>Selected projects spanning backend engineering, full-stack development, AI/ML, analytics, and DSA.</p></div><div class="toolbar glass-card"><input id="project-search" type="search" placeholder="Search by project name, stack, or area..." aria-label="Search projects" /><div class="stats"><span id="project-count">0 projects</span><span id="language-count">0 keywords</span></div></div><p id="search-state" class="search-state" aria-live="polite"></p><div class="project-grid" id="project-grid"></div></section>
+        <section class="glass-card" id="internships"><h2>Internship Experience</h2><div class="timeline-list" id="internship-list"></div></section>
+        <section class="glass-card" id="certificates"><h2>Certificates & Achievements</h2><div class="cert-grid" id="certificate-list"></div></section>
+        <section class="glass-card" id="skills"><h2>Skill Matrix</h2><div class="chips"><span>Java</span><span>Python</span><span>JavaScript</span><span>Spring Boot</span><span>Spring Security</span><span>React</span><span>HTML</span><span>CSS</span><span>REST APIs</span><span>WebSockets</span><span>Microservices</span><span>Kafka</span><span>LLD</span><span>Git</span><span>GitHub</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>JDBC</span><span>Data Structures & Algorithms</span><span>DBMS</span><span>Machine Learning</span><span>OpenCV</span></div></section>
         <section class="glass-card portfolio-chatbot" id="chatbot">
-            <div class="chatbot-heading">
-                <div>
-                    <p class="eyebrow">PORTFOLIO AI</p>
-                    <h2>Ask About My Portfolio</h2>
-                    <p>Ask me about projects, skills, internship experience, certifications, or technologies.</p>
-                </div>
-                <span class="chat-status"><i></i> Online</span>
-            </div>
-
-            <div class="chat-suggestions" aria-label="Suggested questions">
-                <button type="button" data-question="Tell me about Shaivi's projects">Projects</button>
-                <button type="button" data-question="What was Shaivi's internship?">Internship</button>
-                <button type="button" data-question="What certifications does Shaivi have?">Certifications</button>
-                <button type="button" data-question="What are Shaivi's main skills?">Skills</button>
-            </div>
-
+            <div class="chatbot-heading"><div><p class="eyebrow">PORTFOLIO AI</p><h2>Ask About My Portfolio</h2><p>Ask about projects, skills, internship experience, certifications, or technologies.</p></div><span class="chat-status"><i></i> Online</span></div>
+            <div class="chat-suggestions" aria-label="Suggested questions"><button type="button" data-question="Tell me about Shaivi's projects">Projects</button><button type="button" data-question="What was Shaivi's internship?">Internship</button><button type="button" data-question="What certifications does Shaivi have?">Certifications</button><button type="button" data-question="What are Shaivi's main skills?">Skills</button></div>
             <div class="chat-window" id="chat-window" aria-live="polite"></div>
-
-            <form class="chat-input-row" id="chat-form">
-                <input id="chat-input" type="text" autocomplete="off" placeholder="Ask a question about the portfolio..." aria-label="Ask about the portfolio" />
-                <button type="submit" aria-label="Send question">➤</button>
-            </form>
+            <form class="chat-input-row" id="chat-form"><input id="chat-input" type="text" autocomplete="off" placeholder="Ask a question about the portfolio..." aria-label="Ask about the portfolio" /><button type="submit" aria-label="Send question">➤</button></form>
             <p class="chatbot-note">This assistant answers from the portfolio/resume information built into this site.</p>
         </section>
     </main>
-
-    <footer class="container">
-        <p>© <span id="year"></span> Shaivi Sahu • Built with HTML, CSS & JavaScript</p>
-    </footer>
-
+    <footer class="container"><p>© <span id="year"></span> Shaivi Sahu • Built with HTML, CSS & JavaScript</p></footer>
     <script src="script.js"></script>
 </body>
-
 </html>
