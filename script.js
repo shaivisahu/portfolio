@@ -3,15 +3,15 @@ year.textContent = new Date().getFullYear();
 
 const internshipData = [
   {
-    role: 'AI Product Development Internship',
+    role: 'AI Product Development Intern',
     company: 'Samatrix Consulting Private Limited',
-    duration: 'Issued Jun 2025 • Expires Jul 2025',
+    duration: '2025',
     summary:
-      'Worked on real-world product development tasks involving statistical analysis and machine learning workflows.',
+      'Contributed to practical product-development workflows involving statistical analysis, data preparation, and machine learning concepts.',
     highlights: [
-      'Applied machine learning concepts in practical scenarios',
-      'Used statistical tools to analyze and interpret data',
-      'Contributed to data cleaning and insight generation',
+      'Applied machine learning concepts to practical business problems',
+      'Worked with data cleaning, analysis, and insight generation',
+      'Strengthened practical understanding of AI/ML product workflows',
     ],
   },
 ];
@@ -21,138 +21,140 @@ const certificateData = [
     title: 'Microsoft Azure Fundamentals – Describe Cloud Concepts',
     issuer: 'Microsoft / Azure',
     year: '2025',
-    link: 'ADD_CERT_LINK_HERE',
+    link: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/',
   },
   {
     title: 'Introduction to Cloud Infrastructure – Azure Architecture & Services',
-    issuer: 'Azure',
+    issuer: 'Microsoft Azure',
     year: '2025',
-    link: 'ADD_CERT_LINK_HERE',
+    link: 'https://learn.microsoft.com/en-us/azure/architecture/',
   },
   {
     title: 'J.P. Morgan Software Engineering Virtual Experience',
     issuer: 'J.P. Morgan',
     year: '2025',
-    link: 'ADD_CERT_LINK_HERE',
+    link: 'https://www.theforage.com/simulations/jpmorgan/software-engineering-v1i3',
   },
   {
     title: 'Accenture Software Engineering Job Simulation',
     issuer: 'Accenture',
     year: '2025',
-    link: 'ADD_CERT_LINK_HERE',
+    link: 'https://www.theforage.com/simulations/accenture/software-engineering-p3ju',
   },
   {
     title: 'ISRO Hackathon Participation',
     issuer: 'ISRO',
     year: '2025',
-    link: 'ADD_CERT_LINK_HERE',
+    link: 'https://www.isro.gov.in/',
   },
 ];
 
 const projectData = [
-  // ===== Resume projects =====
   {
-    name: 'Stock Price Prediction Model',
-    area: 'ML forecasting',
-    stack: 'Python • Machine Learning • LSTM',
+    name: 'Fitness Tracker – Microservices Architecture',
+    area: 'Backend architecture',
+    stack: 'Java • Spring Boot • Microservices • MongoDB • PostgreSQL • Maven',
     description:
-      'Built a stock price prediction system using LSTM neural networks to forecast market trends.',
-    primaryLink: 'https://github.com/shaivisahu/Stock-Price-Prediction-Model-',
+      'Built a scalable fitness tracking platform using microservices architecture, with backend services designed for maintainability and future AI-powered recommendations.',
+    primaryLink: 'https://github.com/shaivisahu/fitness-microservices',
     primaryLabel: 'Repository ↗',
+  },
+  {
+    name: 'Personalized Learning Platform',
+    area: 'Full-stack learning platform',
+    stack: 'Java • Spring Boot • REST APIs • MySQL • Recommendation Workflows',
+    description:
+      'Learning-focused platform designed around recommendation-ready APIs, quiz/workflow modules, and persistent user data.',
+    primaryLink: 'https://github.com/shaivisahu',
+    primaryLabel: 'GitHub ↗',
   },
   {
     name: 'Authentication Server',
     area: 'Backend security',
     stack: 'Java • Spring Boot • Spring Security • JWT • MySQL • REST APIs',
     description:
-      'Developed a backend authentication server with JWT-based authentication and scalable REST APIs.',
-    primaryLink: 'ADD_GITHUB_LINK_HERE',
-    primaryLabel: 'Repository ↗',
-  },
-  {
-    name: 'Fitness Tracker (Microservices Architecture)',
-    area: 'Backend architecture',
-    stack: 'Java • Spring Boot • Microservices • MongoDB • PostgreSQL • Maven',
-    description:
-      'Built a scalable fitness tracking platform with AI-powered suggestions using microservices architecture.',
-    primaryLink: 'https://github.com/shaivisahu/fitness-microservices',
-    primaryLabel: 'Repository ↗',
-  },
-  {
-    name: 'Jarvis',
-    area: 'AI assistant',
-    stack: 'Python • NLP • Speech Recognition • pyttsx3 • REST APIs',
-    description:
-      'Developed a Python virtual assistant that automates daily tasks through voice commands.',
-    primaryLink: 'ADD_GITHUB_LINK_HERE',
-    primaryLabel: 'Repository ↗',
+      'Developed a secure authentication backend using JWT, Spring Security, and REST APIs as a foundation for full-stack applications.',
+    primaryLink: 'https://github.com/shaivisahu',
+    primaryLabel: 'GitHub ↗',
   },
   {
     name: 'ChatApp',
     area: 'Full-stack realtime app',
     stack: 'React • Spring Boot • JWT • MySQL • REST APIs • WebSockets',
     description:
-      'Built a real-time chat app with secure authentication and seamless messaging.',
-    primaryLink: 'ADD_GITHUB_LINK_HERE',
+      'Built a real-time chat application combining a React frontend with Spring Boot services, JWT authentication, and WebSocket-based messaging.',
+    primaryLink: 'https://github.com/shaivisahu',
+    primaryLabel: 'GitHub ↗',
+  },
+  {
+    name: 'Stock Price Prediction Model',
+    area: 'ML forecasting',
+    stack: 'Python • LSTM • scikit-learn • pandas',
+    description:
+      'Built an ML forecasting project using Python-based data processing and LSTM modeling to explore stock-price prediction.',
+    primaryLink: 'https://github.com/shaivisahu/Stock-Price-Prediction-Model-',
     primaryLabel: 'Repository ↗',
   },
   {
-    name: 'ATM Simulation System',
-    area: 'OOP simulation',
-    stack: 'Java • MySQL • JDBC',
+    name: 'Face Recognition System',
+    area: 'AI/ML + computer vision',
+    stack: 'Python • OpenCV • Machine Learning',
     description:
-      'Built a Java ATM simulator replicating banking operations including authentication, transactions, and balance management.',
-    primaryLink: 'https://github.com/shaivisahu/ATM-simulation-System',
-    primaryLabel: 'Repository ↗',
-  },
-
-  // ===== Existing portfolio projects you already had =====
-  {
-    name: 'Personal Portfolio Website',
-    area: 'Web presence',
-    stack: 'HTML • CSS • UI Design',
-    description:
-      'Live personal portfolio website showcasing skills, profile, and project highlights.',
-    primaryLink: 'https://shaivisahu.github.io/personal-portfolio.github.io/',
-    primaryLabel: 'Live Demo ↗',
-  },
-  {
-    name: 'Face-Recognition-System',
-    area: 'AI/ML + CV',
-    stack: 'Python • OpenCV • ML',
-    description:
-      'Computer vision project for facial recognition using Python-based ML/CV tooling.',
+      'Computer-vision project exploring face detection and recognition with Python and OpenCV-based tooling.',
     primaryLink: 'https://github.com/shaivisahu/Face-Recognition-System',
     primaryLabel: 'Repository ↗',
   },
   {
-    name: 'supply_chain_risk_app',
+    name: 'Supply Chain Risk App',
     area: 'Applied analytics',
-    stack: 'Python • Analytics • App Design',
+    stack: 'Python • Analytics • Data Insights',
     description:
-      'Risk analysis concept app focused on supply chain insights and data-driven monitoring.',
+      'Applied analytics project focused on identifying and presenting supply-chain risk signals through a practical application workflow.',
     primaryLink: 'https://github.com/shaivisahu/supply_chain_risk_app',
     primaryLabel: 'Repository ↗',
   },
   {
-    name: 'Racing-Game',
-    area: 'Frontend/game logic',
-    stack: 'JavaScript • Game Dev • Frontend',
+    name: 'ATM Simulation System',
+    area: 'OOP + database application',
+    stack: 'Java • MySQL • JDBC • OOP',
     description:
-      'Browser-based racing game demonstrating JavaScript logic, DOM events, and gameplay loops.',
-    primaryLink: 'https://shaivisahu.github.io/Racing-Game/',
-    primaryLabel: 'Live Demo ↗',
+      'Built a Java ATM simulator covering authentication, transactions, balance management, and database-backed workflows.',
+    primaryLink: 'https://github.com/shaivisahu/ATM-simulation-System',
+    primaryLabel: 'Repository ↗',
+    secondaryLink: 'https://shaivisahu.github.io/ATM-simulation-System/',
+    secondaryLabel: 'Live Demo ↗',
   },
   {
-    name: 'DSA-Bootcamp-Java',
-    area: 'DSA practice',
-    stack: 'Java • DSA • Problem Solving',
+    name: 'Racing Game',
+    area: 'Frontend + game logic',
+    stack: 'JavaScript • HTML • CSS • DOM Events',
     description:
-      'Consistent DSA practice repository with Java coding exercises and interview prep content.',
+      'Browser-based racing game showcasing JavaScript interaction, DOM events, and gameplay logic.',
+    primaryLink: 'https://github.com/shaivisahu/Racing-Game',
+    primaryLabel: 'Repository ↗',
+    secondaryLink: 'https://shaivisahu.github.io/Racing-Game/',
+    secondaryLabel: 'Live Demo ↗',
+  },
+  {
+    name: 'DSA Bootcamp – Java',
+    area: 'DSA + interview preparation',
+    stack: 'Java • Data Structures • Algorithms • Problem Solving',
+    description:
+      'Ongoing Java-based practice across data structures, algorithms, and interview-oriented problem solving.',
     primaryLink: 'https://github.com/shaivisahu/DSA-Bootcamp-Java',
     primaryLabel: 'Repository ↗',
   },
+  {
+    name: 'Personal Portfolio Website',
+    area: 'Web presence',
+    stack: 'HTML • CSS • JavaScript • GitHub Pages',
+    description:
+      'Personal website for presenting projects, technical skills, experience, achievements, and recruiter-facing highlights.',
+    primaryLink: 'https://shaivisahu.github.io/personal-portfolio.github.io/',
+    primaryLabel: 'Live Demo ↗',
+  },
 ];
+
 const grid = document.getElementById('project-grid');
 const search = document.getElementById('project-search');
 const projectCount = document.getElementById('project-count');
@@ -170,7 +172,10 @@ function renderProjects(items, query = '') {
         <p>${project.description}</p>
         <small>${project.area}</small>
         <span>${project.stack}</span>
-        <a href="${project.primaryLink}" target="_blank" rel="noreferrer">${project.primaryLabel}</a>
+        <div class="project-links">
+          <a href="${project.primaryLink}" target="_blank" rel="noreferrer">${project.primaryLabel}</a>
+          ${project.secondaryLink ? `<a href="${project.secondaryLink}" target="_blank" rel="noreferrer">${project.secondaryLabel}</a>` : ''}
+        </div>
       </article>
     `,
         )
@@ -184,14 +189,13 @@ function renderProjects(items, query = '') {
     languageCount.textContent = `${languages.size} keywords`;
 
     if (query && items.length === 0) {
-        searchState.textContent = `No projects matched "${query}". Try "java", "python", or "frontend".`;
+        searchState.textContent = `No projects matched "${query}". Try "java", "python", "spring", or "frontend".`;
     } else if (query) {
         searchState.textContent = `Showing ${items.length} result${items.length === 1 ? '' : 's'} for "${query}".`;
     } else {
         searchState.textContent = 'Showing all projects.';
     }
 }
-
 
 function renderInternships(items) {
     internshipList.innerHTML = items
@@ -217,7 +221,7 @@ function renderCertificates(items) {
       <article class="cert-card">
         <h3>${item.title}</h3>
         <p>${item.issuer} • ${item.year}</p>
-        <a href="${item.link}" target="_blank" rel="noreferrer">View Certificate ↗</a>
+        <a href="${item.link}" target="_blank" rel="noreferrer">View Credential / Reference ↗</a>
       </article>
     `,
     )
